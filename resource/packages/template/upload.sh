@@ -1,12 +1,11 @@
 #!/usr/bin/sh
 
 # ディレクトリとファイルのhash値を取得
-TEMP_DIR=temp/
-
 TARGET_DIR=static/
 DOCS_FILE=docs.md
 SLIDES_FILE=slides.md
 
+TEMP_DIR=temp/
 FILE_LIST=$TEMP_DIR/files.txt
 HASH_LIST=$TEMP_DIR/hash_list.txt
 FINAL_HASH=$TEMP_DIR/final_hash.txt
@@ -32,3 +31,18 @@ sha256sum $HASH_LIST | awk '{print $1}' > $FINAL_HASH
 
 echo "FINAL_HASH"
 cat $FINAL_HASH
+
+#S3からhashfileを取得
+
+# ハッシュ値が一致するか確認
+
+# 一致しない場合はアップロード 一致する場合終了
+
+# すべて削除
+
+# ファイルをアップロード
+
+# ハッシュ値をアップロード
+
+#終了
+
