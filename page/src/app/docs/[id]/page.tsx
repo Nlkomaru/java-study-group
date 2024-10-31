@@ -22,7 +22,7 @@ const components = {
 export default async function RemoteMdxPage({params}: { params: { id: string } }) {
     // MDX text - can be from a local file, database, CMS, fetch, anywhere...
     const id = params.id
-    const res = await fetch("https://slide.moripa.nikomaru.dev/" + id + "/docs.md")
+    const res = await fetch(`https://${process.env.NEXT_PUBLIC_S3_HOST_NAME}/${id}/docs.md`)
     const markdown = await res.text()
 
 
@@ -30,7 +30,7 @@ export default async function RemoteMdxPage({params}: { params: { id: string } }
         if (!url.startsWith("./static")) {
             return url
         }
-        return `https://slide.moripa.nikomaru.dev/${id}/${url.replace("./", "")}`
+        return `https://${process.env.NEXT_PUBLIC_S3_HOST_NAME}/${id}/${url.replace("./", "")}`
     }
 
     return (<div className={css({backgroundColor: "#d1f9d4", padding: "100px"})}>

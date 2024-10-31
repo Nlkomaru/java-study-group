@@ -13,7 +13,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'slide.moripa.nikomaru.dev',
+                hostname: `${process.env.NEXT_PUBLIC_S3_HOST_NAME}`,
                 port: '',
                 pathname: '/**',
             }],

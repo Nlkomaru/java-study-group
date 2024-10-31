@@ -14,12 +14,12 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
-    "@ark-ui/react": "^3.4.0",
-    "@mdx-js/loader": "^3.0.1",
-    "@mdx-js/react": "^3.0.1",
-    "hono": "^4.4.9",
-    "lucide-react": "^0.398.0",
-    "next": "^14.2.4",
+    "@ark-ui/react": "^4.2.0",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "hono": "^4.6.8",
+    "lucide-react": "^0.454.0",
+    "next": "^15.0.2",
     "react": "^18",
     "react-dom": "^18",
     "react-markdown": "^9.0.1",
@@ -28,19 +28,19 @@
     "swr": "^2.2.5"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.12.0",
-    "@cloudflare/workers-types": "^4.20240620.0",
-    "@pandacss/dev": "^0.41.0",
-    "@park-ui/panda-preset": "^0.38.1",
-    "@types/node": "^20",
+    "@cloudflare/next-on-pages": "^1.13.5",
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "@pandacss/dev": "^0.47.0",
+    "@park-ui/panda-preset": "^0.42.0",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "eslint-plugin-next-on-pages": "^1.12.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.2",
+    "eslint-plugin-next-on-pages": "^1.13.5",
     "typescript": "^5",
-    "vercel": "^32.3.0",
-    "wrangler": "^3.62.0"
+    "vercel": "^37.14.0",
+    "wrangler": "^3.84.0"
   },
   "engines": {
     "pnpm": "^9.0.0",

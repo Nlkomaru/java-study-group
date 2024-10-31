@@ -81,8 +81,6 @@ jobs:
       - name: Build Setup
         run: |
           cd packages
-          find -name "package.json" | xargs sed 's/\$S3_UPLOAD_BUCKET/$S3_UPLOAD_BUCKET/g'
-          find -name "package.json" | xargs sed 's/\$S3_ENDPOINT/$S3_ENDPOINT/g'
 
         # S3へのアップロード
       - name: Upload to S3
