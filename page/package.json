@@ -1,5 +1,5 @@
 {
-  "name": "moripa-programming-beginner-docs",
+  "name": "java-study-group",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,9 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages@1",
-    "preview": "npm run pages:build && wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy",
+    "pages:build": "pnpm dlx @cloudflare/next-on-pages@1",
+    "preview": "pnpm run pages:build && wrangler pages dev",
+    "deploy": "pnpm run pages:build && wrangler pages deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
@@ -45,6 +45,6 @@
   "engines": {
     "pnpm": "^9.0.0",
     "npm": "please use pnpm",
-    "yang": "please use pnpm"
+    "yarn": "please use pnpm"
   }
 }
