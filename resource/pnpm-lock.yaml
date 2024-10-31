@@ -4,164 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-catalogs:
-  default:
-    '@slidev/cli':
-      specifier: ^0.49.29
-      version: 0.49.29
-    '@slidev/theme-default':
-      specifier: latest
-      version: 0.25.0
-    '@slidev/theme-seriph':
-      specifier: latest
-      version: 0.25.0
-    '@slidev/types':
-      specifier: ^0.49.29
-      version: 0.49.29
-    codemirror-theme-vars:
-      specifier: ^0.1.2
-      version: 0.1.2
-    playwright-chromium:
-      specifier: ^1.48.2
-      version: 1.48.2
-    prism-theme-vars:
-      specifier: ^0.2.5
-      version: 0.2.5
-    vue:
-      specifier: ^3.5.12
-      version: 3.5.12
-
 importers:
 
   .: {}
 
-  packages/docs-git-1:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
   packages/docs-java-1:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
-  packages/docs-java-2:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
-  packages/docs-java-array-list:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
-  packages/docs-java-method:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
-  packages/docs-java-statement-repeat:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
-  packages/docs-java-value-type:
-    dependencies:
-      '@slidev/cli':
-        specifier: ^0.49.11
-        version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
-      playwright-chromium:
-        specifier: ^1.41.2
-        version: 1.48.2
-      vue:
-        specifier: ^3.4.29
-        version: 3.5.12(typescript@5.6.3)
-
-  packages/docs-plugin-event:
     dependencies:
       '@slidev/cli':
         specifier: ^0.49.11
@@ -182,35 +29,35 @@ importers:
   packages/template:
     dependencies:
       '@slidev/cli':
-        specifier: 'catalog:'
+        specifier: ^0.49.11
         version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
       '@slidev/theme-default':
-        specifier: 'catalog:'
+        specifier: latest
         version: 0.25.0
       '@slidev/theme-seriph':
-        specifier: 'catalog:'
+        specifier: latest
         version: 0.25.0
       playwright-chromium:
-        specifier: 'catalog:'
+        specifier: ^1.41.2
         version: 1.48.2
       vue:
-        specifier: 'catalog:'
+        specifier: ^3.4.29
         version: 3.5.12(typescript@5.6.3)
 
   packages/theme-modern:
     dependencies:
       '@slidev/types':
-        specifier: 'catalog:'
+        specifier: ^0.49.11
         version: 0.49.29(@nuxt/kit@3.13.2(rollup@4.24.2))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.2)(typescript@5.6.3)(vite@5.4.10(@types/node@18.19.60))
       codemirror-theme-vars:
-        specifier: 'catalog:'
+        specifier: ^0.1.2
         version: 0.1.2
       prism-theme-vars:
-        specifier: 'catalog:'
+        specifier: ^0.2.4
         version: 0.2.5
     devDependencies:
       '@slidev/cli':
-        specifier: 'catalog:'
+        specifier: ^0.49.11
         version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
 
 packages:
