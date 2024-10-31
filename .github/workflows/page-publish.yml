@@ -27,7 +27,11 @@ jobs:
         name: Install pnpm
         with:
           version: 9
-          run_install: true
+          run_install: false
+
+      - name: Install
+        run: |
+          pnpm install
 
       - name: Build
         run: |
