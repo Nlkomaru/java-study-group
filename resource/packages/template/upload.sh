@@ -47,6 +47,11 @@ else
   echo "不一致"
 fi
 
+# ハッシュ値をアップロード
+echo `cat $FINAL_HASH` > $TEMP_DIR/hash.txt
+aws s3 cp $TEMP_DIR/hash.txt --endpoint-url $S3_ENDPOINT s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt
+
+
 # すべて削除
 rm -rf $TEMP_DIR
 aws s3 rm s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME --endpoint-url $S3_ENDPOINT --recursive
@@ -58,11 +63,6 @@ cp -r picture dist
 cp -r static dist
 cp docs.md dist
 aws s3 cp dist --endpoint-url $S3_ENDPOINT s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME --recursive
-
-# ハッシュ値をアップロード
-
-echo `cat $FINAL_HASH` > $TEMP_DIR/hash.txt
-aws s3 cp $TEMP_DIR/hash.txt --endpoint-url $S3_ENDPOINT s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt
 
 #終了
 
