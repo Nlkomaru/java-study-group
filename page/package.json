@@ -30,7 +30,7 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.12.0",
     "@cloudflare/workers-types": "^4.20240620.0",
-    "@pandacss/dev": "^0.41.0",
+    "@pandacss/dev": "^0.47.0",
     "@park-ui/panda-preset": "^0.38.1",
     "@types/node": "^20",
     "@types/react": "^18",
