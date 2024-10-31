@@ -13,9 +13,9 @@ defaults:
     working-directory: page
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    name: Deploy
+
     steps:
       - uses: actions/setup-node@v4
         with:

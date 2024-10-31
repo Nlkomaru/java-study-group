@@ -77,11 +77,6 @@ jobs:
           python3 -m pip install playwright && \
           playwright install-deps
 
-       # ビルドのセットアップ
-      - name: Build Setup
-        run: |
-          cd packages
-
         # S3へのアップロード
       - name: Upload to S3
         run: |
