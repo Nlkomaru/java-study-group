@@ -76,11 +76,6 @@ jobs:
           python3 -m pip install playwright && \
           playwright install-deps
 
-        # S3のバケットのリセット
-      - name : Reset bucket
-        run: |
-          aws s3 rm s3://$S3_UPLOAD_BUCKET --endpoint-url $S3_ENDPOINT --recursive
-
        # ビルドのセットアップ
       - name: Build Setup
         run: |
@@ -88,10 +83,6 @@ jobs:
           find -name "package.json" | xargs sed 's/\$S3_UPLOAD_BUCKET/$S3_UPLOAD_BUCKET/g'
           find -name "package.json" | xargs sed 's/\$S3_ENDPOINT/$S3_ENDPOINT/g'
 
-        # ビルドの実行
-      - name: Generate screenshot
-        run: |
-          pnpm run screenshot
 
         # S3へのアップロード
       - name: Upload to S3

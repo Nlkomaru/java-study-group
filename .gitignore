@@ -6,3 +6,4 @@ resource/packages/**/temp/**
 resource/packages/**/dist/**
 
 .idea
+.env

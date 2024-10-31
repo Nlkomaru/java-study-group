@@ -35,8 +35,8 @@ sha256sum $HASH_LIST | awk '{print $1}' > $FINAL_HASH
 echo "FINAL_HASH"
 cat $FINAL_HASH
 
-#S3からhashfileを取得
-aws s3 cp s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt $TEMP_DIR/s3_hash.txt
+#S3からhashfileを取得 存在しない場合は無視
+aws s3 cp s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt $TEMP_DIR/s3_hash.txt --endpoint-url $S3_ENDPOINT || true
 
 # ハッシュ値が一致するか確認
 

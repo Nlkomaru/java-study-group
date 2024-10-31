@@ -39,4 +39,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy page/.vercel/output/static --project-name=moripa-programming-beginner-docs
+          command: pages deploy page/.vercel/output/static --project-name=${{secrets.CLOUDFLARE_PAGE_PROJECT_ID}}

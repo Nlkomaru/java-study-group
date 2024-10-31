@@ -1,1 +1,12 @@
-# programming-beginner-docs
+# java study group
+
+## 必要なSecrets
+## スライド用
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+S3_UPLOAD_BUCKET
+S3_ENDPOINT
+## ページ用
+CLOUDFLARE_API_TOKEN
+CLOUDFLARE_ACCOUNT_ID
+CLOUDFLARE_PAGE_PROJECT_ID
