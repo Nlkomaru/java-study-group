@@ -24,14 +24,11 @@ jobs:
           version: 9
           run_install: false
 
-
         # Node.jsのインストール
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
-          cache-dependency-path: './page/pnpm-lock.yaml'
 
       - name: Install dependencies
         run: |
