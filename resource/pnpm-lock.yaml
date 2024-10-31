@@ -4,6 +4,24 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@slidev/cli':
+      specifier: ^0.49.29
+      version: 0.49.29
+    '@slidev/theme-default':
+      specifier: latest
+      version: 0.25.0
+    '@slidev/theme-seriph':
+      specifier: latest
+      version: 0.25.0
+    playwright-chromium:
+      specifier: ^1.48.2
+      version: 1.48.2
+    vue:
+      specifier: ^3.5.12
+      version: 3.5.12
+
 importers:
 
   .: {}
@@ -11,37 +29,37 @@ importers:
   packages/docs-java-1:
     dependencies:
       '@slidev/cli':
-        specifier: ^0.49.11
+        specifier: 'catalog:'
         version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
       '@slidev/theme-default':
-        specifier: latest
+        specifier: 'catalog:'
         version: 0.25.0
       '@slidev/theme-seriph':
-        specifier: latest
+        specifier: 'catalog:'
         version: 0.25.0
       playwright-chromium:
-        specifier: ^1.41.2
+        specifier: 'catalog:'
         version: 1.48.2
       vue:
-        specifier: ^3.4.29
+        specifier: 'catalog:'
         version: 3.5.12(typescript@5.6.3)
 
   packages/template:
     dependencies:
       '@slidev/cli':
-        specifier: ^0.49.11
+        specifier: 'catalog:'
         version: 0.49.29(@babel/parser@7.26.1)(@nuxt/kit@3.13.2(rollup@4.24.2))(@types/markdown-it@14.1.2)(@types/node@18.19.60)(@vue/compiler-sfc@3.5.12)(playwright-chromium@1.48.2)(postcss@8.4.47)(rollup@4.24.2)
       '@slidev/theme-default':
-        specifier: latest
+        specifier: 'catalog:'
         version: 0.25.0
       '@slidev/theme-seriph':
-        specifier: latest
+        specifier: 'catalog:'
         version: 0.25.0
       playwright-chromium:
-        specifier: ^1.41.2
+        specifier: 'catalog:'
         version: 1.48.2
       vue:
-        specifier: ^3.4.29
+        specifier: 'catalog:'
         version: 3.5.12(typescript@5.6.3)
 
   packages/theme-modern:
