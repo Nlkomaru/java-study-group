@@ -1,0 +1,42 @@
+name: Publish to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'page/**'
+
+defaults:
+  run:
+    working-directory: page
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build
+        run: |
+          npm run pages:build
+          ls -a
+          pwd
+          ls -a .vercel/output/static
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy page/.vercel/output/static --project-name=moripa-programming-beginner-docs

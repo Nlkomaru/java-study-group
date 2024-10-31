@@ -1,0 +1,18 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "CC0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r --workspace-concurrency=1 run build",
+    "screenshot": "pnpm -r --workspace-concurrency=1 run screenshot",
+    "publish": "pnpm -r --workspace-concurrency=1 run publish"
+  },
+  "engines": {
+    "pnpm": "^9.12.0",
+    "npm": "please_use_pnpm_instead",
+    "yarn": "please_use_pnpm_instead"
+  },
+  "packageManager": "pnpm@9.12.3"
+}

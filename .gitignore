@@ -1,0 +1,8 @@
+**/node_modules/**
+.idea/**
+resource/packages/**/picture/**
+resource/packages/**/example-export/**
+resource/packages/**/temp/**
+resource/packages/**/dist/**
+
+.idea
