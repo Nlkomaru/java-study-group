@@ -8,7 +8,7 @@ TARGET_DIR=static/
 DOCS_FILE=docs.md
 SLIDES_FILE=slides.md
 
-TEMP_DIR=temp/
+TEMP_DIR=temp
 FILE_LIST=$TEMP_DIR/files.txt
 HASH_LIST=$TEMP_DIR/hash_list.txt
 FINAL_HASH=$TEMP_DIR/final_hash.txt
@@ -35,8 +35,8 @@ sha256sum $HASH_LIST | awk '{print $1}' > $FINAL_HASH
 echo "FINAL_HASH"
 cat $FINAL_HASH
 
-#S3からhashfileを取得 存在しない場合は無視
-aws s3 cp s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt $TEMP_DIR/s3_hash.txt --endpoint-url $S3_ENDPOINT || true
+#S3からhashfileを取得
+aws s3 cp s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt $TEMP_DIR/s3_hash.txt
 
 # ハッシュ値が一致するか確認
 
@@ -50,10 +50,9 @@ fi
 # すべて削除
 rm -rf $TEMP_DIR
 aws s3 rm s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME --endpoint-url $S3_ENDPOINT --recursive
-aws cli
 
 # ファイルをアップロード
-pnpm dlx slidev build --base /$PROJECT_NAME
+pnpm run build
 pnpm run screenshot
 cp -r picture dist
 cp -r static dist

@@ -8,7 +8,7 @@ TARGET_DIR=static/
 DOCS_FILE=docs.md
 SLIDES_FILE=slides.md
 
-TEMP_DIR=temp/
+TEMP_DIR=temp
 FILE_LIST=$TEMP_DIR/files.txt
 HASH_LIST=$TEMP_DIR/hash_list.txt
 FINAL_HASH=$TEMP_DIR/final_hash.txt
@@ -50,10 +50,9 @@ fi
 # すべて削除
 rm -rf $TEMP_DIR
 aws s3 rm s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME --endpoint-url $S3_ENDPOINT --recursive
-aws cli
 
 # ファイルをアップロード
-pnpm dlx slidev build --base /$PROJECT_NAME
+pnpm run build
 pnpm run screenshot
 cp -r picture dist
 cp -r static dist

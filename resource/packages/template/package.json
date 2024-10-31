@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /$npm_package_name",
     "dev": "slidev --open",
     "export": "slidev export",
     "publish": "/upload.sh $npm_package_name",
