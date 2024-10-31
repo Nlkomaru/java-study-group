@@ -36,7 +36,7 @@ echo "FINAL_HASH"
 cat $FINAL_HASH
 
 #S3からhashfileを取得
-aws s3 cp s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt $TEMP_DIR/s3_hash.txt
+aws s3 cp --endpoint-url $S3_ENDPOINT s3://$S3_UPLOAD_BUCKET/$PROJECT_NAME/hash.txt $TEMP_DIR/s3_hash.txt
 
 # ハッシュ値が一致するか確認
 
