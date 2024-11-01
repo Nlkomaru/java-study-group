@@ -1,4 +1,4 @@
-import * as Card from "~/components/ui/card";
+import {Card} from '~/components/ui/card'
 import {css} from "@/styled-system/css";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import React from "react";
 import {SlideInfo} from "~/app/page";
 
 export default function SlideCard(props: { slideInfo: SlideInfo }) {
-    let {slideInfo} = props;
+    const {slideInfo} = props;
     return (<>
         <Card.Root width="xs" className={css({
             outline: "1px solid",
@@ -38,7 +38,7 @@ export default function SlideCard(props: { slideInfo: SlideInfo }) {
                     <IconButton className={css({
                         backgroundColor: "white",
                         outline: "1px solid",
-                        outlineColor: "black"
+                        outlineColor: "white"
                     })} aria-label="Show slidev">
                         <FileCode2 color="black"/>
                     </IconButton>
@@ -49,7 +49,7 @@ export default function SlideCard(props: { slideInfo: SlideInfo }) {
                     <IconButton className={css({
                         backgroundColor: "white",
                         outline: "1px solid",
-                        outlineColor: "black"
+                        outlineColor: "white"
                     })} aria-label="Show slidev">
                         <Presentation color="black"/>
                     </IconButton>
@@ -60,7 +60,7 @@ export default function SlideCard(props: { slideInfo: SlideInfo }) {
                     <IconButton className={css({
                         backgroundColor: "white",
                         outline: "1px solid",
-                        outlineColor: "black"
+                        outlineColor: "white"
                     })} aria-label="Download pdf">
                         <FileText color="black"/>
                     </IconButton>

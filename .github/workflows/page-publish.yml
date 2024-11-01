@@ -14,6 +14,14 @@ defaults:
 
 jobs:
   build:
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_EC2_METADATA_DISABLED: true
+      AWS_REGION: auto
+      S3_UPLOAD_BUCKET: ${{ secrets.S3_UPLOAD_BUCKET }}
+      S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+      NEXT_PUBLIC_S3_HOST_NAME: ${{ secrets.NEXT_PUBLIC_S3_HOST_NAME }}
     runs-on: ubuntu-latest
 
     steps:
