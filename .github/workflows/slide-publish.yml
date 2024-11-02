@@ -62,6 +62,8 @@ jobs:
           fonts-noto-cjk \
           && sudo rm -rf /var/lib/apt/lists/*
 
+
+
         # フォントのインストール pdf,screenshotの日本語対応
       - name : Install font
         env:
@@ -73,9 +75,7 @@ jobs:
         # Chromeのインストール playwrightの依存関係
       - name : Install Chrome
         run: |
-          https://bootstrap.pypa.io/get-pip.py | python3 && \
-          python3 -m pip install playwright && \
-          playwright install-deps
+          pnpm exec playwright install
 
         # S3へのアップロード
       - name: Upload to S3
