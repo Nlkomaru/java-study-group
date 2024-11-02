@@ -75,7 +75,7 @@ jobs:
         # Chromeのインストール playwrightの依存関係
       - name : Install Chrome
         run: |
-          pnpm exec playwright install
+          pnpm dlx @playwright/test@latest install --with-deps
 
         # S3へのアップロード
       - name: Upload to S3
