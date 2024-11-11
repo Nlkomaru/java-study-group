@@ -62,8 +62,6 @@ jobs:
           fonts-noto-cjk \
           && sudo rm -rf /var/lib/apt/lists/*
 
-
-
         # フォントのインストール pdf,screenshotの日本語対応
       - name : Install font
         env:
