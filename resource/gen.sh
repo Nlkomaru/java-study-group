@@ -1,4 +1,8 @@
 echo "スライド名を入力してください"
+
+rm -rf template/temp
+rm -rf template/picture
+
 read slide_name
 SLIDE_NAME=$slide_name
 echo "スライド名は$SLIDE_NAMEです"

@@ -24,6 +24,9 @@ export default async function Home() {
             "Group": "環境構築",
             "list": [
                 {slide: "java-1", title: "JDKのインストール"},
+                {slide: "java-2", title: "IntelliJ IDEAのインストール"},
+                {slide: "gradle-1", title: "Gradleのインストール"},
+                {slide: "git-1", title: "Gitのインストール"},
             ]
         }
     ]
