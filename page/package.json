@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@ark-ui/react": "^4.2.0",
-    "@aws-sdk/client-s3": "^3.682.0",
+    "@aws-sdk/client-s3": "^3.712.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@typescript-eslint/typescript-estree": "^8.12.2",
