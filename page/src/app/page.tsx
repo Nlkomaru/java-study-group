@@ -41,8 +41,8 @@ export default async function Home() {
             "Group": "Webサーバー(Spring Boot)",
             "list": [
                 {slide: "db-1", title: "データベースの作成"},
-                {slide: "spring-1", title: "Spring BootでのWebサーバーの作成1"},
-                {slide: "server-2", title: "Spring BootでのWebサーバーの作成2およびデプロイ"},
+                {slide: "web-server-1", title: "Spring BootでのWebサーバーの作成1"},
+                {slide: "web-server-2", title: "Spring BootでのWebサーバーの作成2およびデプロイ"},
             ]
         }
     ]
