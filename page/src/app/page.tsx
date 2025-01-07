@@ -28,6 +28,22 @@ export default async function Home() {
                 {slide: "gradle-1", title: "Gradleのインストール"},
                 {slide: "git-1", title: "Gitのインストール"},
             ]
+        },
+        {
+            "Group": "Javaの基本",
+            "list": [
+                {slide: "java-3", title: "Javaを始めよう"},
+                {slide: "class-1", title: "クラスについて(クラス、インターフェース)"},
+                {slide: "class-2", title: "継承"},
+            ]
+        },
+        {
+            "Group": "Webサーバー(Spring Boot)",
+            "list": [
+                {slide: "db-1", title: "データベースの作成"},
+                {slide: "spring-1", title: "Spring BootでのWebサーバーの作成1"},
+                {slide: "server-2", title: "Spring BootでのWebサーバーの作成2およびデプロイ"},
+            ]
         }
     ]
 
